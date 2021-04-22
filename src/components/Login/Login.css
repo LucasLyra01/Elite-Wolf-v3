@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+form {
+    padding: 1.5rem;
+}
+
+form > button {
+    width: 100;
+    height: 56px;
+
+    display: flex;
+    flex-direction: column;
+    min-width: 350px;
+    
+    background: var(--botao);
+    color: var(--white);
+    border-radius: 5px;
+    
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    font-size: 1.3rem;
+}
+
+p {
+    margin: 1rem;
+    color: #000;
+    font-weight: 700;
+}
+
+p > a {
+    color: #5768FD;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+.container-principal{
+    border: 1px solid red;
+
+    display: flex;
+
+    /* max-width: 1200px; */
+
+    /* align-items: center; */
+    /* justify-content: center; */
+
+    /* justify-content: space-between; */
+    justify-content: space-around;
+
+    height: 45rem;
+
+}
+
+
+.area-logo{
+    border: 1px solid red;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 500px;
+    height: 640px;
+
+}
+
+.area-logo > img{
+    width: 45rem;
+
+}
+
+.container-conteudo{
+    border: 1px solid red;
+
+    border-radius: 20px;
+    color: var(--title);
+
+    font-family: 'Nunito', sans-serif;
+
+    background: #888888;
+    
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    text-align: center;
+
+    max-width: 500px;
+    height: 640px;
+
+    margin-right: 70px;
+    
+}
+
+.container-conteudo h1 {
+    font-size: 2.5rem;
+    margin-top: 1.5rem;
+    font-weight: 800;
+}
+
+.checkbox {
+    text-align: left;
+    padding: 5px;
+    font-size: 1.2rem;
+}
+
+.checkbox input {
+    width: 15px;
+    height: 15px;
+}
+
+.checkbox label {
+    margin-left: 10px;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* FLOAT LABEL  ////////////////////////////////////////////////////////////////////////////// */ 
+/* FLOAT LABEL  ////////////////////////////////////////////////////////////////////////////// */ 
+/* FLOAT LABEL  ////////////////////////////////////////////////////////////////////////////// */ 
+/* FLOAT LABEL  ////////////////////////////////////////////////////////////////////////////// */ 
+
+#float-label{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+
+    position: relative;
+
+    margin-top: 10px;
+}
+
+#float-label input{
+    width: 100;
+    height: 56px;
+    padding: 14px 16px 0 10px;
+    outline: 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #fff;
+    font-size: 16px;
+}
+
+#float-label label {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 12px;
+    color: #999;
+    pointer-events: none;
+
+    position: absolute;
+    transform: translate(0, 26px) scale(1);
+
+    transform-origin: top left;
+    transition: all 0.2s ease-out;
+}
+
+#float-label:focus-within label {
+    transform: translate(0, 12px) scale(0.75);
+}
+
+#float-label .Active {
+    transform: translate(0, 12px) scale(0.75);
+}

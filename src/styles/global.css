@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+
+body{
+    background: var(--background);
+    
+}
+
+button{
+    cursor: pointer;
+}
+
+@media (max-width: 1080px){
+    html{
+        font-size: 93.75%;
+    }
+}
+
+@media (max-width: 994px){
+    
+    .area-logo img {
+        width: 19rem;
+    }
+    .container-conteudo{
+        max-width: 400px;
+    }
+    
+}
+
+@media (max-width: 767px){
+    html{
+        font-size: 87.5%;
+    }
+
+    .area-logo img {
+        width: 10rem;
+    }
+    .container-conteudo{
+        max-width: 400px;
+    }
+
+}
+
+:root{
+    --background: #009EC0;
+    --white: #FFFFFF;
+    
+    
+    /* Titulos: Bem vindo, */
+    --title: #FFFFFF;
+    
+    /* Botões de entrar, cancelar e excluir conta */
+    --botao: #00A1D7;
+    --botao-vermelho: #FF0000;
+    
+}
