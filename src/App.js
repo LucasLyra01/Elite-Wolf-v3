@@ -1,21 +1,8 @@
 import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
-import { Login } from './components/Login/Login';
-import TelaCadastro from './components/Cadastro/Cadastro';
+import Routes from './routes';
 
-import './styles/global.css';
+import './styles/global.module.scss';
 
-
-function App() {
-  return (
-    <>
-      <BrowserRouter>
-        <Route exact path="/" component={Login} />
-        <Route path="/cadastro" component={TelaCadastro} />
-      </BrowserRouter>
-    </>
-
-  );
-}
+const App = () => <Routes />
 
 export default App;
